@@ -5,4 +5,11 @@ public abstract class Site {
 
     protected abstract double getBaseAmount();
     protected abstract double getTaxAmount(double base);
-}
+
+    public double getBillableAmound() {
+        double base = getBaseAmount();
+        double tax = getTaxAmount(base);
+
+        return base + tax;
+    }
+ }
