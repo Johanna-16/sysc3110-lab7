@@ -6,7 +6,7 @@ public abstract class Site {
     protected abstract double getBaseAmount();
     protected abstract double getTaxAmount(double base);
 
-    public double getBillableAmound() {
+    public double getBillableAmount() {
         double base = getBaseAmount();
         double tax = getTaxAmount(base);
 
