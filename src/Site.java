@@ -4,5 +4,5 @@ public abstract class Site {
     protected  double _rate;
 
     protected abstract double getBaseAmount();
-    protected abstract double getTaxAmount();
+    protected abstract double getTaxAmount(double base);
 }
